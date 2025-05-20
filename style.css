@@ -21,7 +21,7 @@
         .illustration-side {
             flex: 1;
             background: linear-gradient(rgba(67, 97, 238, 0.7), rgba(67, 97, 238, 0.7)), 
-                        url(img/pexels-karolina-grabowska-4386467.jpg);
+                        url(/ACCEUIL/img/pexels-karolina-grabowska-4386467.jpg);
             background-size: cover;
             background-position: center;
             display: flex;
