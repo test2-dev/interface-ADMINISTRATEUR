@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediVision - Tableau de Bord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar Futuriste -->
+        <div class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>ADMIN</h2>
+                    <p>Tableau de bord</p>
+                </div>
+            </div>
+            
+            <div class="nav-item active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </div>
+            
+            <a href="/MEDECIN/index2.html"><div class="nav-item">
+                <i class="fas fa-user-md"></i>
+                <span>Médecins</span>
+            
+            </div></a>
+            
+            <a href="/PATIENT/page5.html">
+            <div class="nav-item">
+                <i class="fas fa-procedures"></i>
+                <span>Patients</span>
+            </div></a>
+            
+            <div class="nav-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Rendez-vous</span>
+        
+            </div>
+            
+            <div class="nav-item">
+                <i class="fas fa-file-medical"></i>
+                <span>Dossiers</span>
+            </div>
+            
+            <div class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Statistiques</span>
+            </div>
+            
+            <div class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Paramètres</span>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Tableau de Bord Médical</h1>
+                <div class="user-profile">
+                    <img src="img/man-wearing-spect-standing-with-laptop_579367-105.jpg" alt="Admin" class="user-avatar">
+                    <span class="user-name">Mr L'ADMIN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            
+            <!-- Cartes Statistiques -->
+            <div class="stats-grid">
+                <div class="stat-card doctors">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="stat-title">Médecins</div>
+                    <div class="stat-value">28</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+3 ce mois-ci</span>
+                    </div>
+                </div></a>
+
+                <a href="/PATIENT/page5.html">
+                <div class="stat-card patients">
+                    <div class="stat-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div class="stat-title">Patients</div>
+                    <div class="stat-value">1,428</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+42 cette semaine</span>
+                    </div>
+                </div></a>
+                
+                <div class="stat-card appointments">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-title">Rendez-vous</div>
+                    <div class="stat-value">214</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>32 aujourd'hui</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card emergency">
+                    <div class="stat-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <div class="stat-title">Urgences</div>
+                    <div class="stat-value">5</div>
+                    <div class="stat-change negative">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>-2 depuis hier</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Résumé des Statuts (remplace l'activité mensuelle) -->
+            <div class="status-summary glass-card">
+                <div class="status-header">
+                    <h3>Statut des Rendez-vous</h3>
+                </div>
+                <div class="status-item">
+                    <div class="status-info">
+                        <div class="status-badge confirmed"></div>
+                        <span>Confirmés</span>
+                    </div>
+                    <div class="status-count">156</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-info">
+                        <div class="status-badge pending"></div>
+                        <span>En attente</span>
+                    </div>
+                    <div class="status-count">42</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-info">
+                        <div class="status-badge canceled"></div>
+                        <span>Annulés</span>
+                    </div>
+                    <div class="status-count">16</div>
+                </div>
+            </div>
+            
+            <!-- Tableau des Rendez-vous Récents -->
+            <div class="appointments-section glass-card">
+                <div class="section-header">
+                    <h3>Rendez-vous Récents</h3>
+                    <div class="section-actions">
+                        <button>
+                            <i class="fas fa-plus"></i>
+                            <span>Nouveau RDV</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <table class="appointments-table">
+                    <thead>
+                        <tr>
+                            <th>Patient</th>
+                            <th>Médecin</th>
+                            <th>Date/Heure</th>
+                            <th>Type</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="patient-info">
+                                    <img src="img/pexels-tara-winstead-7723354.jpg" alt="Patient" class="patient-avatar">
+                                    <div>
+                                        <div class="patient-name">Marie Lambert</div>
+                                        <div class="patient-id">ID: P-10045</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Dr. Martin</td>
+                            <td>
+                                <div class="appointment-time">
+                                    <span class="appointment-date">15/06/2023</span>
+                                    <span class="appointment-hour">10:15 - 10:45</span>
+                                </div>
+                            </td>
+                            <td>Consultation</td>
+                            <td><span class="status-tag confirmed">Confirmé</span></td>
+                            <td>
+                                <button class="action-btn" title="Modifier"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn" title="Annuler"><i class="fas fa-times"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="patient-info">
+                                    <img src="img/pexels-tara-winstead-7723354.jpg" alt="Patient" class="patient-avatar">
+                                    <div>
+                                        <div class="patient-name">josue christ</div>
+                                        <div class="patient-id">ID: P-10067</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Dr. AÏCHA  </td>
+                            <td>
+                                <div class="appointment-time">
+                                    <span class="appointment-date">15/06/2023</span>
+                                    <span class="appointment-hour">11:00 - 11:30</span>
+                                </div>
+                            </td>
+                            <td>Suivi</td>
+                            <td><span class="status-tag pending">En attente</span></td>
+                            <td>
+                                <button class="action-btn" title="Modifier"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn" title="Annuler"><i class="fas fa-times"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="patient-info">
+                                    <img src="img/pexels-tara-winstead-7723354.jpg" alt="Patient" class="patient-avatar">
+                                    <div>
+                                        <div class="patient-name">EMMANUEL</div>
+                                        <div class="patient-id">ID: P-10089</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Dr. DIARRASOUBA</td>
+                            <td>
+                                <div class="appointment-time">
+                                    <span class="appointment-date">16/06/2023</span>
+                                    <span class="appointment-hour">14:00 - 14:45</span>
+                                </div>
+                            </td>
+                            <td>Examen</td>
+                            <td><span class="status-tag confirmed">Confirmé</span></td>
+                            <td>
+                                <button class="action-btn" title="Modifier"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn" title="Annuler"><i class="fas fa-times"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="patient-info">
+                                    <img src="img/pexels-tara-winstead-7723354.jpg" alt="Patient" class="patient-avatar">
+                                    <div>
+                                        <div class="patient-name">sossou</div>
+                                        <div class="patient-id">ID: P-10112</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Dr. samuel</td>
+                            <td>
+                                <div class="appointment-time">
+                                    <span class="appointment-date">16/06/2023</span>
+                                    <span class="appointment-hour">15:30 - 16:00</span>
+                                </div>
+                            </td>
+                            <td>Consultation</td>
+                            <td><span class="status-tag canceled">Annulé</span></td>
+                            <td>
+                                <button class="action-btn" title="Modifier"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn" title="Annuler"><i class="fas fa-times"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="patient-info">
+                                    <img src="img/pexels-tara-winstead-7723354.jpg" alt="Patient" class="patient-avatar">
+                                    <div>
+                                        <div class="patient-name">bile thomas/div>
+                                        <div class="patient-id">ID: P-10134</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Dr. ATTOBRA</td>
+                            <td>
+                                <div class="appointment-time">
+                                    <span class="appointment-date">17/06/2023</span>
+                                    <span class="appointment-hour">16:45 - 17:15</span>
+                                </div>
+                            </td>
+                            <td>Urgence</td>
+                            <td><span class="status-tag confirmed">Confirmé</span></td>
+                            <td>
+                                <button class="action-btn" title="Modifier"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn" title="Annuler"><i class="fas fa-times"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

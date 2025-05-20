@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Administrateur</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="illustration-side">
+            <div class="illustration-content">
+                <h2>Bienvenue !!</h2>
+                <p>Plateforme de gestion médicale complète pour les professionnels de santé.</p>
+                
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> Gestion centralisée des rendez-vous</li>
+                    <li><i class="fas fa-check-circle"></i> Suivi des patients en temps réel</li>
+                    <li><i class="fas fa-check-circle"></i> Tableau de bord analytique</li>
+                    <li><i class="fas fa-check-circle"></i> Sécurité des données médicales</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="form-side">
+            <div class="form-container">
+                <div class="logo">
+                    <img src="img/pexels-pavel-danilyuk-7108337.jpg" alt="MediAdmin Logo">
+                    <h1>Connexion Administrateur</h1>
+                    <p>Accédez à votre espace sécurisé</p>
+                </div>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Identifiant Administrateur</label>
+                        <input type="text" id="username" name="username" placeholder="Entrez votre identifiant" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <div class="forgot-password">
+                            <a href="#">Mot de passe oublié ?</a>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">
+                       <a href="dashboard.html"><i class="fas fa-sign-in-alt"></i> Se connecter</a>
+                    </button>
+                    
+                    <div id="errorMessage" class="error-message">
+                        <i class="fas fa-exclamation-circle"></i> Identifiant ou mot de passe incorrect
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

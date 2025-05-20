@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: #333;
+  }
+p{
+    font-size: 16px;
+}
+
+img{
+    width: 45px;
+    height: 100%;
+    background-image: url(/Capture.PNG);
+    border: 1px solid;
+    border-radius: 25px;
+}
+
+.info0{
+    align-items: center;
+    margin-right:0 ;
+    display: flex;
+}
+.info0 div{
+    margin: 1px;
+}
+.info0 p{
+    padding-top: 6px;
+    margin: 0;
+    width: 230px;
+}
+.info0 img{
+     height: 80%;
+}
+
+.info1{
+    background: linear-gradient(135deg, #0047AB, #2196F3, #1E90FF);
+    display: flex;
+    margin-left: 16px;
+    border-radius: 25px;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.info1 img{
+    height: 90%;
+    width: 30px;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.774);
+    display: flex;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: 55px;
+    width: 100%;
+}
+
+.medPat{
+    display: flex;
+    margin-left: 700px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* part tableau */
+
+table{
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+div.dispInfo{
+    background-color: rgba(204, 202, 202, 0.849);
+    width: 600px; 
+    height: 580px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.97);
+    color: #1e3c72;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 0 40px rgba(33, 147, 176, 0.4);
+    max-width: 480px;
+    width: 90%;
+}
+
+tr{
+    width: 100%;
+}
+
+td{
+    width: 10%;
+    text-align: center;
+    height: 30px;
+}
+
+hr{
+    width: 400px;
+    margin-right: 25px;
+}
+
+.dispInfo{
+    display: flex;
+    margin-left: 190px;
+
+}
+
+.dispInfo .modi{
+    margin-left: 50px;
+    width: 270px;
+    height: 175px;
+    background-color: rgba(204, 202, 202, 0.849);
+    margin-left: 200px;
+    background: rgba(255, 255, 255, 0.97);
+    color: #1e3c72;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 0 40px rgba(33, 147, 176, 0.4);
+    text-align: center;
+    max-width: 480px;
+    /* width: 90%; */
+}
+
+.modifier{
+    width: 270px;
+    text-align: center;
+    
+}
+
+.modifier h4{
+    margin-top: 0;
+}
+
+.Pinfo{
+    display: flex;
+    background: rgba(255, 255, 255, 0.97);
+    color: #1e3c72;
+    border-radius: 20px 20px 0 0;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 0 40px rgba(33, 147, 176, 0.4);
+    width: 480px;
+}
+
+.Pinfo .valsup{
+    margin-left: 28px;
+    padding-top: 5px;
+}
+
+.Pinfo .valsup button{
+    background: #1e3c72;
+    color: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1),
+        0 0 40px rgba(33, 147, 176, 0.2);
+    width: 150px;
+    margin-top: 10px;
+}
+
+
+
+
+.info2 p{
+    margin: 1px;
+    padding: 0;
+    margin-left: 9px;
+}       
+
+.Pinfo img{
+    width: 100px;
+    border-radius: 0;
+    height: 100%;
+}
+
+.dispo{
+    height: 70%;
+    width: 70%;
+    margin-left: 33px;
+    margin-top: 34px;
+}
+
+.Pinfo img{
+    width: 70px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.CONFIRMER{
+    background: #1e3c72;
+    color: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1),
+        0 0 40px rgba(33, 147, 176, 0.2);
+    width: 150px;
+    height: 30px;
+}
+
+.retour{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 15px;
+    color: #1e3c72;
+    background: #1e3c72;
+    color: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1),
+        0 0 40px rgba(33, 147, 176, 0.2);
+    color: beige;    
+    
+}
